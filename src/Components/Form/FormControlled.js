@@ -23,7 +23,7 @@ export default function FormControlled() {
   };
 
   return (
-    <form onSubmit={onSubmit} onReset={onReset}>
+    <form className="column-gap" onSubmit={onSubmit} onReset={onReset}>
       <input
         type="text"
         placeholder="Nome"
@@ -45,8 +45,11 @@ export default function FormControlled() {
         value={password}
         onChange={(event) => setPassword(event.target.value)}
       />
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
+
+      <div className="row-gap">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
     </form>
   );
 }

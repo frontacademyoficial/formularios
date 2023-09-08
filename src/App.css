@@ -3,9 +3,21 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 24px;
 }
 
 .grid {
   display: grid;
   grid-gap: 16px;
+}
+
+.row-gap {
+  display: flex;
+  gap: 8px;
+}
+
+.column-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
